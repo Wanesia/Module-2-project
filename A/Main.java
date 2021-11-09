@@ -121,7 +121,7 @@ public class Main{
                                 System.out.println("1-Add   2-Delete    3-Display");
                                 userInput=scan.next();
                                 if (userInput.equals("1")){
-                                    System.out.print("Add your favorite movie from movies list");
+                                    System.out.println("Add your favorite movie from movies list");
                                     System.out.println("Movie title? ");
                                     String title=scan.next();
                                     movies=deserializeMovie("Movies/listOfMovies.bin");//gets data from file
