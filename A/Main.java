@@ -34,7 +34,13 @@ public class Main{
                     user.createFavListFile();
                     user.createWatchListFile();
                 }
-                else if (userInput.equals("login")){
+                System.out.println("Account created successfully");
+                System.out.println("Now its time to log in");
+
+                userInput = "login";
+
+
+                if (userInput.equals("login")){
                     user.login(user, userInput);
                     while(running){
                         System.out.println("Pick section or type exit to close program");
@@ -46,7 +52,7 @@ public class Main{
                             System.out.println("What would you like to do?");
                             System.out.println("1-Add movie     2-Delete movie      3-Display Movie");
                             System.out.println("4-Favorite movies   5-Watching history");
-        
+
                             userInput=scan.next();
                             if (userInput.equals("1")){
                                 String title;
@@ -175,10 +181,15 @@ public class Main{
                                     System.out.println("\nEnd of list");
                                 }
                             }
+
                             else{
                                 System.out.println("Something went wrong. Please try again");
                                 break;
                             }
+                        }
+                        else if (userInput.equals("exit")){
+                            System.out.println("Exiting program");
+                            System.exit(0);
                         }
                     }
                 }
