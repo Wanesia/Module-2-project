@@ -33,9 +33,9 @@ public class Main{
                     user.createRegisterFile();
                     user.createFavListFile();
                     user.createWatchListFile();
+                     System.out.println("Account created successfully");
+                    System.out.println("Now its time to log in");
                 }
-                System.out.println("Account created successfully");
-                System.out.println("Now its time to log in");
 
                 userInput = "login";
 
