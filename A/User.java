@@ -31,7 +31,6 @@ public class User implements Serializable {
         user.setMail(scan.next());
         System.out.print("Password:");
         user.setPassword(scan.next());
-        System.out.println("Account created successfully");
     }
     public void login(User user,String userInput){
         user.cls();
